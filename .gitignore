@@ -38,3 +38,5 @@ target
 tmp
 tmp/**
 tmp/**/*
+.cache
+.target/

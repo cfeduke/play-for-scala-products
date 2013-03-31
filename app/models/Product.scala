@@ -11,4 +11,6 @@ object Product {
     Product(501022631098L, "Zebra Paperclips", "Zebra length 28mm assorted 150 pack"))
 
   def findAll = this.products.toList.sortBy(_.ean)
+
+  def findByEan(ean: Long) = this.products.find(_.ean == ean)
 }

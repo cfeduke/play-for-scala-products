@@ -1,12 +1,20 @@
 @(title: String)(content: Html)(implicit lang: Lang)
-
 <!DOCTYPE html>
-
 <html>
 <head>
 <title>@title</title>
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
-<link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.min.js"))' type='text/javascript'></script>
+  <script src='@routes.WebJarAssets.at(WebJarAssets.locate("jquery.cookie.js"))' type='text/javascript'></script>
+  <script src='@routes.WebJarAssets.at(WebJarAssets.locate("ui/minified/jquery-ui.min.js"))' type='text/javascript'></script>
+  <script src='@routes.WebJarAssets.at(WebJarAssets.locate("bootstrap.min.js"))' type='text/javascript'></script>
+  <script src='@routes.Assets.at("javascripts/jwerty.js")' type="text/javascript"></script>
+  <link href='@routes.WebJarAssets.at(WebJarAssets.locate("redmond/jquery-ui.css"))' rel="stylesheet" />
+  <link href='@routes.WebJarAssets.at(WebJarAssets.locate("redmond/jquery.ui.theme.css"))' rel="stylesheet" />
+  <link href='@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap.min.css"))' rel="stylesheet" />
+  <link href='@routes.WebJarAssets.at(WebJarAssets.locate("css/bootstrap-responsive.min.css"))' rel="stylesheet" />
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.css")">
+  <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
 </head>
 <body>
   <div class="screenshot">

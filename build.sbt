@@ -1,5 +1,4 @@
 import sbt.Keys._
-import play.Project._
 import java.io.File
 import play.core.PlayVersion.{current => playVersion}
 
@@ -28,18 +27,23 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe"            %  "config"          % "1.0.1" withSources,
-  "org.webjars"             %% "webjars-play"    % "2.2.0",
-  "com.typesafe.play"       %% "play"            % playVersion,
-  "com.typesafe.play"       %% "anorm"           % playVersion,
-  "com.typesafe.play"       %% "play-jdbc"       % playVersion,
-  "com.typesafe.play"       %% "play-json"       % playVersion,
-  "net.sf.barcode4j"        %  "barcode4j"       % "2.1",
-  "com.github.nscala-time"  %% "nscala-time"     % "0.6.0" withSources,
+  "org.webjars"             %  "jquery-ui"         % "1.10.2-1",
+  "org.webjars"             %  "jquery-ui-themes"  % "1.10.0",
+  "org.webjars"             %  "jquery-cookie"     % "1.3.1",
+  "org.webjars"             %% "webjars-play"      % "2.2.0",
+  "org.webjars"             %  "bootstrap"         % "2.3.2",
+  "com.typesafe"            %  "config"            % "1.0.1" withSources,
+  "org.webjars"             %% "webjars-play"      % "2.2.0",
+  "com.typesafe.play"       %% "play"              % playVersion,
+  "com.typesafe.play"       %% "anorm"             % playVersion,
+  "com.typesafe.play"       %% "play-jdbc"         % playVersion,
+  "com.typesafe.play"       %% "play-json"         % playVersion,
+  "net.sf.barcode4j"        %  "barcode4j"         % "2.1",
+  "com.github.nscala-time"  %% "nscala-time"       % "0.6.0" withSources,
   //
-  "junit"                   %  "junit"           % "4.8.1"  % "test",
-  "com.typesafe.play"       %% "play-test"       % playVersion % "test",
-  "org.scalatest"           %% "scalatest"       % "2.0" % "test" withSources
+  "junit"                   %  "junit"             % "4.8.1"  % "test",
+  "com.typesafe.play"       %% "play-test"         % playVersion % "test",
+  "org.scalatest"           %% "scalatest"         % "2.0" % "test" withSources
 )
 
 play.Project.playScalaSettings

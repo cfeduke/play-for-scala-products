@@ -1,4 +1,5 @@
 *.bak
+*.sublime*
 *.launch
 *.pydevproject
 *.swp

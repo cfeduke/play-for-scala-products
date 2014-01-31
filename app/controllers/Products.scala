@@ -8,9 +8,9 @@ object Products extends Controller {
     Ok(views.html.products.list(products))
   }
 
-  def show(ean: Long) = Action { implicit request =>
+  def show(ean: String) = Action { implicit request =>
     Product.findByEan(ean).map { product =>
       Ok(views.html.products.details(product))
-      }.getOrElse(NotFound)
-    }
+    }.getOrElse(NotFound)
+  }
 }

@@ -1,4 +1,4 @@
-Manning - Play for Scala
+Play Framework Barcode display
 =====================================
 
-The example app from [the book Play for Scala](http://www.manning.com/hilton/).
+This example app is modified from [the book Play for Scala](http://www.manning.com/hilton/).
